@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="src.main.java.mapper.UserMapper" >
+	<resultMap id="BaseResultMap" type="src.main.java.bean.User" >
+    <id column="username" property="documentno" jdbcType="VARCHAR" />
+    <id column="age" property="documentno" jdbcType="Integer" />
+    <id column="gender" property="documentno" jdbcType="VARCHAR" />
+    </resultMap>
+    
+    <select id="select" resultMap="BaseResultMap" parameterType="" >
+    select *
+    from User;
+  </select>
+</mapper>

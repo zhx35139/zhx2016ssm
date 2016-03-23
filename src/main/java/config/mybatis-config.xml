@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">  
+<configuration>  
+    <!-- 基础设置 -->  
+    <settings>  
+        <!-- changes from the defaults -->  
+        <setting name="lazyLoadingEnabled" value="false" />  
+        <setting name="jdbcTypeForNull" value="NULL" />
+    </settings>  
+    <!-- 别名定义 -->  
+    <typeAliases>  
+        <typeAlias alias="Staff" type="com.jfj316.model.bean.Staff" />
+        <typeAlias alias="User" type="src.main.java.bean.User" />
+        
+    </typeAliases>  
+    <!-- SQL映射文件 --> 
+	<mappers>
+		<mapper resource="src/main/java/mapper/xml/UserMapper.xml" />
+		
+	</mappers>
+</configuration>
